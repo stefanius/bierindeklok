@@ -29,6 +29,7 @@ class AppKernel extends Kernel
             /* Stefanius */
             new Stef\GenerateFixturesBundle\StefGenerateFixturesBundle(),
             new Stef\SimpleCmsBundle\StefSimpleCmsBundle(),
+            new Stef\BierInDeKlokBundle\StefBierInDeKlokBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

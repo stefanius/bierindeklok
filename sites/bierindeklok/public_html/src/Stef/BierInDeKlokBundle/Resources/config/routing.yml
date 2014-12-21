@@ -1,0 +1,3 @@
+stef_bier_in_de_klok_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: StefBierInDeKlokBundle:Default:index }
