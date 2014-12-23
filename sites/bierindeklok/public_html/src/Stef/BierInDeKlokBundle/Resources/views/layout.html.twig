@@ -13,9 +13,8 @@
 
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <link href="/css/cover.css" rel="stylesheet">
+    <link href="/css/bidk.css" rel="stylesheet">
 
 </head>
 
@@ -33,24 +32,21 @@
                     <ul class="nav masthead-nav">
                         <li class="active"><a href="/">Home</a></li>
                         <li><a href="/studenten.php">Studenten</a></li>
+                        <li><a href="/bier-van-a-tot-z">Bier Alfabet</a></li>
                     </ul>
                 </div>
             </div>
+
+            {% include "StefSimpleCmsBundle:GoogleAdsense:728x90.html.twig" with {'pubid' : 'ca-pub-1143505562670221', 'slotid' : '5087446017' } %}
 
             {% block content %}
 
             {% endblock %}
 
-            <div class="mastfoot">
-                <div class="inner">
-
-                </div>
-            </div>
+            {% include "StefSimpleCmsBundle:GoogleAdsense:728x90.html.twig" with {'pubid' : 'ca-pub-1143505562670221', 'slotid' : '5087446017' } %}
 
         </div>
-
     </div>
-
 </div>
 
 <!-- Bootstrap core JavaScript

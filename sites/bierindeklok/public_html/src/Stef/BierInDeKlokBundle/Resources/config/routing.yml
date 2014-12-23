@@ -1,3 +1,28 @@
 stef_bier_in_de_klok_homepage:
     path:     /
     defaults: { _controller: StefBierInDeKlokBundle:Index:index }
+
+stef_bier_in_de_klok_dictionary:
+    path:     /bier-van-a-tot-z
+    defaults: { _controller: StefBierInDeKlokBundle:Dictionary:index }
+    requirements:
+        _method:  GET
+
+stef_bier_in_de_klok_dictionary_slug:
+    path:     /bier-van-a-tot-z/{letter}
+    defaults: { _controller: StefBierInDeKlokBundle:Dictionary:index }
+    requirements:
+        _method:  GET
+        letter: .+
+
+stef_bier_in_de_klok_news_archive_index:
+    pattern:  /nieuws
+    defaults: { _controller: StefBierInDeKlokBundle:News:showMainNewsPage }
+    requirements:
+        _method:  GET
+
+stef_bier_in_de_klok_news_show:
+    pattern:  /nieuws/{slug}
+    defaults: { _controller: StefBierInDeKlokBundle:News:show }
+    requirements:
+        _method:  GET
